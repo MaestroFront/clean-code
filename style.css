@@ -1,4 +1,57 @@
 /* Basic Style */
+.popup {
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, .9);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  transition: all 1s ease-in-out;
+
+}
+
+.popup__container {
+
+  position: relative;
+  width: 60%;
+  height: 20%;
+  background-color: rgba(255, 255, 255, 0.545);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+}
+
+.popup__container a {
+
+  font-size: 1rem;
+  color: black;
+
+}
+
+.popup__container a:hover {
+
+  color: white;
+
+}
+
+.popup__cross {
+
+  position: absolute;
+  top: 5%;
+  right: 1%;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+
+}
+
 body {
 
   background-color: #f8f8f8;
