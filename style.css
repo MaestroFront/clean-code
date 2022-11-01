@@ -111,21 +111,23 @@ body {
 
 }
 
-ul {
+.current__list,
+.done__list {
 
   margin: 0;
   padding: 0px;
 
 }
 
-li,
+.current__item,
+.done__item,
 .title {
 
   list-style: none;
 
 }
 
-input,
+.input,
 .btn{
 
   outline: none;
@@ -146,7 +148,7 @@ input,
 
 .btn:hover {
 
-  color: #3a3A3a;
+  color: #3a3a3a;
 
 }
 
@@ -164,22 +166,22 @@ label[for="new-task"] {
 
 }
 
-input[type="text"] {
+.input-text {
 
   margin: 0;
   font-size: 18px;
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #dDd;
-  background: #FFF;
+  border: 1px solid #ddd;
+  background: #fff;
   border-radius: 6px;
   font-family: "Lato", sans-serif;
   color: #888;
 
 }
 
-input[type="text"]:focus {
+.input-text:focus {
 
   color: #333;
 
@@ -193,38 +195,42 @@ label[for="new-task"] {
 
 }
 
-#new-task {
+.new-task {
 
   width: 318px;
 
 }
 
 /* Task list */
-li {
+.current__item,
+.done__item {
 
+  list-style: none;
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 
 }
 
-li > * {
+.current__item > *,
+.done__item > * {
 
   vertical-align: middle;
 
 }
 
-li > input[type="checkbox"] {
+.current__item > .input-checkbox,
+.done__item > .input-checkbox {
 
   margin: 0 10px;
 
 }
 
-li > label {
+.current__item > label,
+.done__item > label {
 
   padding-left: 10px;
   box-sizing: border-box;
@@ -233,13 +239,14 @@ li > label {
 
 }
 
-li >  input[type="text"] {
+.current__item > .input-text,
+.done__item > .input-text {
 
   width: 226px;
 
 }
 
-.btn__delete img {
+.remove-task {
 
   height: 2em;
   transform: rotateZ(45deg);
@@ -247,7 +254,7 @@ li >  input[type="text"] {
 
 }
 
-.btn__delete img:hover {
+.remove-task:hover {
 
   transform: rotateZ(0);
 
@@ -262,13 +269,14 @@ li >  input[type="text"] {
 }
 
 /* Edit Task */
-li input[type=text] {
+.current__item .input-text,
+.done__item  .input-text {
 
   display: none;
 
 }
 
-.edit-mode input[type=text] {
+.edit-mode .input-text {
 
   display: inline-block;
   width: 224px;
