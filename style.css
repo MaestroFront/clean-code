@@ -22,7 +22,7 @@ body {
 
 }
 
-.header .more-inf {
+.header__link {
 
   font-family: "fantasy", cursive;
 
@@ -52,7 +52,7 @@ body {
 
 }
 
-.task-field {
+.add__field {
 
   display: flex;
 
@@ -201,7 +201,7 @@ li >  input[type="text"] {
 }
 
 /* Completed */
-#completed-tasks label {
+.done__list label {
 
   text-decoration: line-through;
   color: #888;
