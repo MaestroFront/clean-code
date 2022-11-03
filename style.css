@@ -100,11 +100,15 @@ body {
 }
 
 .input,
-.btn{
+.btn-add,
+.btn-edit,
+.btn-delete{
   outline: none;
 }
 
-.btn {
+.btn-add,
+.btn-edit,
+.btn-delete {
   background: none;
   border: 0px;
   color: #888;
@@ -114,7 +118,9 @@ body {
   cursor: pointer;
 }
 
-.btn:hover {
+.btn-add:hover,
+.btn-edit:hover,
+.btn-delete:hover {
   color: #3a3a3a;
 }
 
