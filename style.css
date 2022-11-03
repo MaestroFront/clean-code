@@ -1,6 +1,5 @@
 /* Basic Style */
 .popup {
-
   position: absolute;
   top: 0px;
   left: 0px;
@@ -12,11 +11,9 @@
   align-items: center;
   z-index: 3;
   transition: all 1s ease-in-out;
-
 }
 
 .popup__container {
-
   position: relative;
   width: 60%;
   height: 20%;
@@ -25,63 +22,48 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-
 }
 
 .popup__container a {
-
   font-size: 1rem;
   color: black;
-
 }
 
 .popup__container a:hover {
-
   color: white;
-
 }
 
 .popup__cross {
-
   position: absolute;
   top: 5%;
   right: 1%;
   width: 10px;
   height: 10px;
   cursor: pointer;
-
 }
 
 body {
-
   background-color: #f8f8f8;
   color: #333;
   font-family: "Lato", sans-serif;
-
 }
 
 .header {
-
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
-
 }
 
 .header .header__image {
-
   width: 100%;
-
 }
 
 .header__link {
-
   font-family: "fantasy", cursive;
-
 }
 
-@media (max-width:768px) {
+@media screen {
 
   .header { 
     text-align: center;
@@ -90,52 +72,43 @@ body {
 }
 
 .main {
-
   display: block;
   width: 500px;
   margin: 0 auto 0;
-
 }
 
 .task {
-
   width: 56%;
   display: inline-block;
   flex-grow: 1;
-
 }
 
 .add__field {
-
   display: flex;
-
 }
 
 .current__list,
 .done__list {
-
   margin: 0;
   padding: 0px;
-
 }
 
 .current__item,
 .done__item,
 .title {
-
   list-style: none;
-
 }
 
 .input,
-.btn{
-
+.btn-add,
+.btn-edit,
+.btn-delete{
   outline: none;
-
 }
 
-.btn {
-
+.btn-add,
+.btn-edit,
+.btn-delete {
   background: none;
   border: 0px;
   color: #888;
@@ -143,19 +116,17 @@ body {
   width: 60px;
   font-family: "Lato", sans-serif;
   cursor: pointer;
-
 }
 
-.btn:hover {
-
+.btn-add:hover,
+.btn-edit:hover,
+.btn-delete:hover {
   color: #3a3a3a;
-
 }
 
 /* Heading */
 .title,
 label[for="new-task"] {
-
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -163,11 +134,9 @@ label[for="new-task"] {
   padding: 30px 0 10px;
   margin: 0;
   text-transform: uppercase;
-
 }
 
 .input-text {
-
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -178,33 +147,25 @@ label[for="new-task"] {
   border-radius: 6px;
   font-family: "Lato", sans-serif;
   color: #888;
-
 }
 
 .input-text:focus {
-
   color: #333;
-
 }
 
 /* New Task */
 label[for="new-task"] {
-
   display: block;
   margin: 0 0 20px;
-
 }
 
 .new-task {
-
   width: 318px;
-
 }
 
 /* Task list */
 .current__item,
 .done__item {
-
   list-style: none;
   overflow: hidden;
   padding: 20px 0;
@@ -212,79 +173,58 @@ label[for="new-task"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .current__item > *,
 .done__item > * {
-
   vertical-align: middle;
-
 }
 
 .current__item > .input-checkbox,
 .done__item > .input-checkbox {
-
   margin: 0 10px;
-
 }
 
 .current__item > label,
 .done__item > label {
-
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
-
 }
 
 .current__item > .input-text,
 .done__item > .input-text {
-
   width: 226px;
-
 }
 
 .remove-task {
-
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
-
 }
 
 .remove-task:hover {
-
   transform: rotateZ(0);
-
 }
 
 /* Completed */
 .done__list label {
-
   text-decoration: line-through;
   color: #888;
-
 }
 
 /* Edit Task */
 .current__item .input-text,
 .done__item  .input-text {
-
   display: none;
-
 }
 
 .edit-mode .input-text {
-
   display: inline-block;
   width: 224px;
-
 }
 
 .edit-mode label {
-
   display: none;
-
 }
