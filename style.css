@@ -63,12 +63,12 @@ body {
   font-family: "fantasy", cursive;
 }
 
-@media (max-width:768px) {
-  
+@media screen {
+
   .header { 
     text-align: center;
   }
-  
+
 }
 
 .main {
